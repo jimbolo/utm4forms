@@ -1,1 +1,2 @@
 # utm4forms
+ UTM JavaScript file that defines a class called UtmCookie. This class is used to manage cookies related to UTM parameters, which are used to track the source of website traffic. The class provides methods for creating and reading cookies, as well as for writing UTM parameters to cookies. It also includes functionality for writing additional parameters to cookies and for determining whether UTM or additional parameters are present in the URL.
