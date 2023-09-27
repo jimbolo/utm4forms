@@ -288,7 +288,7 @@ UtmForm = (function() {
     else if (this._addToForm === "formIdArray") {
       var formIdArray = ["form1", "form2", "wpcf7-form"]; // replace with your form ids
       for (var j = 0; j < allForms.length; j++) {
-        // match partially with form id or class
+        // match form id or class partially with 
         if (formIdArray.some((item) => allForms[j].id.match(item)) || formIdArray.some((item) => allForms[j].className.match(item))) {
           this.addAllFieldsToForm(allForms[j]);
           console.log("form id: " + allForms[j].id + " utm values attached");
