@@ -285,18 +285,17 @@ UtmForm = (function() {
     // Following Added by Cem Avsar on 09/26/23
     // loop through the formIdArray and check if the form id is in the array
     // "formIdArray": Attach UTMs values to only the forms with the ids specified in the array
-    else if (this._addToForm === 'formIdArray') {
-      var formIdArray = ['form1','form2','form3']; // replace with your form ids
-     // loop through the formIdArray and check if the form id is in the array
-        for (var j = 0; j < allForms.length; j++) {
-          console.log('form id: ' + allForms[j].id);
-          if (formIdArray.includes(allForms[j].id)) {
-            // attached utm values to the matching forms
-            this.addAllFieldsToForm(allForms[j]);
-            console.log('form id: ' + allForms[j].id + ' utm values attached');
-          }
+    else if (this._addToForm === "formIdArray") {
+      var formIdArray = ["form1", "form2", "wpcf7-form"]; // replace with your form ids
+      for (var j = 0; j < allForms.length; j++) {
+        // match partially with form id or class
+        if (formIdArray.some((item) => allForms[j].id.match(item)) || formIdArray.some((item) => allForms[j].className.match(item))) {
+          this.addAllFieldsToForm(allForms[j]);
+          console.log("form id: " + allForms[j].id + " utm values attached");
+          console.log("form class: " + allForms[j].className + " utm values attached");
         }
       }
+    }
 
     else {
     // Following Modified by Cem Avsar on 09/26/23
