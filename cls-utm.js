@@ -282,7 +282,7 @@ UtmForm = (function() {
     else if (this._addToForm === 'all') {
       len = allForms.length;
     }
-    // Following Added by Cem Avsar on 09/26/23
+    // Following Added by Cem Avsar on 09/26/23 
     // loop through the formIdArray and check if the form id or class is in the array
     // `formIdArray` Attach UTMs values to only the forms with the ids specified in the array
     else if (this._addToForm === "formIdArray") {
