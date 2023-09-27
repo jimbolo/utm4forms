@@ -1,5 +1,5 @@
 # utm4forms
-GitHub Copilot: The `cls-utm.js` file can be utilized with forms to automatically populate hidden input fields with UTM parameters, which are used to track the source of website traffic. This can be useful for tracking the effectiveness of marketing campaigns and understanding where website traffic is coming from.
+The `cls-utm.js` file can be utilized with forms to automatically populate hidden input fields with UTM parameters, which are used to track the source of website traffic. This can be useful for tracking the effectiveness of marketing campaigns and understanding where website traffic is coming from.
 
 The `UtmForm` class defined in `cls-utm.js` provides several methods for adding UTM parameters to forms. The `addFormElem` method is used to add a hidden input field to a form with a given name and value. The `getFieldEl` method is used to get the HTML element for a hidden input field with a given name and value. If the form already has a hidden input field with the same name as the field name we are trying to add, then the value of the existing field is updated. If the form does not have a hidden input field with the same name, then a new hidden input field is added to the form.
 
