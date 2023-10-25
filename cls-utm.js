@@ -233,17 +233,14 @@ UtmForm = (function() {
     this._utmParamsMap.zc_gad = options.vtm_msclkid_field || "zc_gad"; // Addded by Cem Avsar on 2021
     this._utmParamsMap.utm_source = options.utm_source_field || "u_source";
     this._utmParamsMap.utm_medium = options.utm_medium_field || "u_medium";
-    this._utmParamsMap.utm_campaign =
-      options.utm_campaign_field || "u_campaign";
+    this._utmParamsMap.utm_campaign = options.utm_campaign_field || "u_campaign";
     this._utmParamsMap.utm_content = options.utm_content_field || "u_content";
     this._utmParamsMap.utm_term = options.utm_term_field || "u_term";
 
     this._additionalParamsMap = options.additional_params_map || {};
-    this._initialReferrerField =
-      options.initial_referrer_field || "u_firstreferrer";
+    this._initialReferrerField = options.initial_referrer_field || "u_firstreferrer";
     this._lastReferrerField = options.last_referrer_field || "u_lastreferrer";
-    this._initialLandingPageField =
-      options.initial_landing_page_field || "u_firstlandingpage";
+    this._initialLandingPageField = options.initial_landing_page_field || "u_firstlandingpage";
     this._visitsField = options.visits_field || "u_visits";
 
     // Options:
